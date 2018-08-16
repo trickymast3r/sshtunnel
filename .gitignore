@@ -1,0 +1,11 @@
+node_modules
+.next/*
+learning/*
+old/*
+static/uploads/*
+static/next/*
+logs/*
+*.log
+*.lock
+*.zip
+*.gz

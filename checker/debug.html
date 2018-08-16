@@ -1,0 +1,1344 @@
+
+
+
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie10 lt-ie9 lt-ie8 lt-ie7" lang="en" xmlns:fb="http://ogp.me/ns/fb#" itemscope itemtype="http://schema.org/WebPage"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie10 lt-ie9 lt-ie8 ie7" lang="en" xmlns:fb="http://ogp.me/ns/fb#" itemscope itemtype="http://schema.org/WebPage"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie10 lt-ie9 ie8" lang="en" xmlns:fb="http://ogp.me/ns/fb#" itemscope itemtype="http://schema.org/WebPage"> <![endif]-->
+<!--[if IE 9]>         <html class="no-js lt-ie10 ie9" lang="en" xmlns:fb="http://ogp.me/ns/fb#" itemscope itemtype="http://schema.org/WebPage"> <![endif]-->
+<!--[if gt IE 9]><!--> <html class="no-js ie10" lang="en" xmlns:fb="http://ogp.me/ns/fb#" itemscope itemtype="http://schema.org/WebPage"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <link rel=dns-prefetch href=//ajax.googleapis.com>
+  <link rel=dns-prefetch href=//www.google-analytics.com>
+  
+  <meta id="klick-siteroot" name="klick-siteroot" value="~" />
+  <meta http-equiv="cleartype" content="on">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,IE=9,chrome=1"><script type="text/javascript">window.NREUM||(NREUM={});NREUM.info = {"beacon":"bam.nr-data.net","errorBeacon":"bam.nr-data.net","licenseKey":"d0432cc4a5","applicationID":"27898489","transactionName":"YQdVNUVYCBUEUxBcWVhNejd0FiMILV8JUHVZDEMTWFUKAxcfLVtSUxo=","queueTime":0,"applicationTime":66,"agent":"","atts":""}</script><script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,n,t){function r(t){if(!n[t]){var o=n[t]={exports:{}};e[t][0].call(o.exports,function(n){var o=e[t][1][n];return r(o||n)},o,o.exports)}return n[t].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<t.length;o++)r(t[o]);return r}({1:[function(e,n,t){function r(){}function o(e,n,t){return function(){return i(e,[c.now()].concat(u(arguments)),n?null:this,t),n?void 0:this}}var i=e("handle"),a=e(2),u=e(3),f=e("ee").get("tracer"),c=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],d="api-",l=d+"ixn-";a(p,function(e,n){s[n]=o(d+n,!0,"api")}),s.addPageAction=o(d+"addPageAction",!0),s.setCurrentRouteName=o(d+"routeName",!0),n.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,n){var t={},r=this,o="function"==typeof n;return i(l+"tracer",[c.now(),e,t],r),function(){if(f.emit((o?"":"no-")+"fn-start",[c.now(),r,o],t),o)try{return n.apply(this,arguments)}finally{f.emit("fn-end",[c.now()],t)}}}};a("setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,n){m[n]=o(l+n)}),newrelic.noticeError=function(e){"string"==typeof e&&(e=new Error(e)),i("err",[e,c.now()])}},{}],2:[function(e,n,t){function r(e,n){var t=[],r="",i=0;for(r in e)o.call(e,r)&&(t[i]=n(r,e[r]),i+=1);return t}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],3:[function(e,n,t){function r(e,n,t){n||(n=0),"undefined"==typeof t&&(t=e?e.length:0);for(var r=-1,o=t-n||0,i=Array(o<0?0:o);++r<o;)i[r]=e[n+r];return i}n.exports=r},{}],4:[function(e,n,t){n.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,n,t){function r(){}function o(e){function n(e){return e&&e instanceof r?e:e?f(e,u,i):i()}function t(t,r,o,i){if(!d.aborted||i){e&&e(t,r,o);for(var a=n(o),u=m(t),f=u.length,c=0;c<f;c++)u[c].apply(a,r);var p=s[y[t]];return p&&p.push([b,t,r,a]),a}}function l(e,n){v[e]=m(e).concat(n)}function m(e){return v[e]||[]}function w(e){return p[e]=p[e]||o(t)}function g(e,n){c(e,function(e,t){n=n||"feature",y[t]=n,n in s||(s[n]=[])})}var v={},y={},b={on:l,emit:t,get:w,listeners:m,context:n,buffer:g,abort:a,aborted:!1};return b}function i(){return new r}function a(){(s.api||s.feature)&&(d.aborted=!0,s=d.backlog={})}var u="nr@context",f=e("gos"),c=e(2),s={},p={},d=n.exports=o();d.backlog=s},{}],gos:[function(e,n,t){function r(e,n,t){if(o.call(e,n))return e[n];var r=t();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,n,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return e[n]=r,r}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],handle:[function(e,n,t){function r(e,n,t,r){o.buffer([e],r),o.emit(e,n,t)}var o=e("ee").get("handle");n.exports=r,r.ee=o},{}],id:[function(e,n,t){function r(e){var n=typeof e;return!e||"object"!==n&&"function"!==n?-1:e===window?0:a(e,i,function(){return o++})}var o=1,i="nr@id",a=e("gos");n.exports=r},{}],loader:[function(e,n,t){function r(){if(!x++){var e=h.info=NREUM.info,n=d.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&n))return s.abort();c(y,function(n,t){e[n]||(e[n]=t)}),f("mark",["onload",a()+h.offset],null,"api");var t=d.createElement("script");t.src="https://"+e.agent,n.parentNode.insertBefore(t,n)}}function o(){"complete"===d.readyState&&i()}function i(){f("mark",["domContent",a()+h.offset],null,"api")}function a(){return E.exists&&performance.now?Math.round(performance.now()):(u=Math.max((new Date).getTime(),u))-h.offset}var u=(new Date).getTime(),f=e("handle"),c=e(2),s=e("ee"),p=window,d=p.document,l="addEventListener",m="attachEvent",w=p.XMLHttpRequest,g=w&&w.prototype;NREUM.o={ST:setTimeout,SI:p.setImmediate,CT:clearTimeout,XHR:w,REQ:p.Request,EV:p.Event,PR:p.Promise,MO:p.MutationObserver};var v=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1044.min.js"},b=w&&g&&g[l]&&!/CriOS/.test(navigator.userAgent),h=n.exports={offset:u,now:a,origin:v,features:{},xhrWrappable:b};e(1),d[l]?(d[l]("DOMContentLoaded",i,!1),p[l]("load",r,!1)):(d[m]("onreadystatechange",o),p[m]("onload",r)),f("mark",["firstbyte",u],null,"api");var x=0,E=e(4)},{}]},{},["loader"]);</script>
+  <title>Sony Rewards | Home</title>
+  <meta name="apple-mobile-web-app-title" content="Sony Rewards">
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320"><!-- Always 320 -->
+  <meta name="viewport" content="width=device-width, minimum-scale=0, maximum-scale=1.0, user-scalable=no">
+  <meta name="keywords" />
+  <meta name="description" />
+	
+
+
+
+
+  <script src="/Content/web/js/bower_components/modernizr/modernizr.js"></script>
+  <link rel="stylesheet" type="text/css" href="/Content/web/css/grid.css?v=07131003">
+  <link rel="stylesheet" type="text/css" href="/Content/web/css/main.css?v=11081324">
+  <link rel="stylesheet" type="text/css" href="/Content/web/css/dev.css?v=07131003">
+	<link rel="stylesheet" type="text/css" href="/Content/web/css/bootstrap-slider.css">	
+  <meta name="apple-itunes-app" content="app-id=522556733">
+  <!--[if lt IE 9]>
+  <script src="/Content/web/js/bower_components/html5shiv/dist/html5shiv.min.js"></script>
+  <script src="/Content/web/js/bower_components/respond/dest/respond.min.js"></script>
+  <![endif]-->
+  <!--[if IE 9]>
+  <script src="/Content/web/js/bower_components/html5shiv/dist/html5shiv.min.js"></script>
+  <![endif]-->
+
+  
+
+	<!-- Google Analytics -->
+	<script type="text/javascript">
+		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+			m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+		    var GAID = 'UA-1991432-1';
+	        ga('create', GAID, 'auto');
+
+		var GAID2 = 'UA-1991432-14';
+		ga('create', GAID2, 'auto', { 'name': 'ad' });	//ad tracker		
+
+
+
+				ga('set', 'dimension1', '767ae64b-77a3-424a-b954-3b3826cddbea');
+				ga('set', 'dimension8', 'Not Logged In');
+
+				ga('ad.set', 'dimension1', '767ae64b-77a3-424a-b954-3b3826cddbea');
+				ga('ad.set', 'dimension7', 'Not Logged In');
+
+		//need page view overwrite
+		ga('send', 'pageview');
+		ga('ad.send', 'pageview');	//send page view for ad tracker
+
+		
+			
+
+
+
+	</script>
+    
+    <script type="text/javascript" src="//nexus.ensighten.com/sonyglobal/rewards-prod/Bootstrap.js"></script>
+	<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+
+</head>
+<body class="clearfix">
+<div class="hidden" data-element_type="cartdt" data-cart_items="0" data-cart_points="0"></div>
+<div id="documentwrap">	
+		    <section class="sony-top-logo">
+		        <div class="wrap mwrap">
+		            <a href="http://www.sony.com" target="_blank" alt="Sony Logo"><span class="visuallyhidden">SONY</span></a>
+		        </div>
+		    </section>
+		    <header id="header" class="row spheHeader" role="banner">
+                
+<div class="wrap mwrap count2">
+    <section class="personalbar utility">
+        
+		
+		<div class="cols links text-right">&nbsp;
+		        <nav class="inline">
+		            <a href="/en/login?u=/en/home/" class="gaLoginClass">Log In</a>
+		                 or <a href="/en/register?u=/en/home/" class="gaJoinClass">Join</a>
+		        </nav> 
+		</div>
+		<a data-toggle-event="utilityBarHide" class="close btn" href="#">×</a>
+    </section>
+    <section class="headline">
+        <a href="javascript:void(0)" class="mobilemenutoggle sr-icon-menu dataclassevent" data-toggle-event="mobileMenuShow"><span class="visuallyhidden">Menu</span></a>
+        <h1 class="brand">
+            <a href="/" class="sr-logo"><span class="visuallyhidden">Sony Rewards, Need Help? Call us at 1-888-715-7669</span></a>
+        </h1>
+        <a href="/" class="brand">
+            <img class="brand" src="/content/web/img/logo-srmicro@2x.png" width="140" height="140">
+        </a>
+    </section>
+</div>
+
+			    
+
+
+
+<section  class="navigation hidden-print">
+<div class="wrap mwrap">
+
+<a class="brand" href="/">
+    <img class="brand" src="/content/web/img/logo-sonyrewards-bw.png" width="140" height="140" alt="Sony  Rewards Icon">
+</a>
+<nav class="nav main drop" data-delay="500">
+    <ul>
+        <li class="visible-menu-md"><a href="javascript:void(0)" class="single-item">My Account</a><span class="background"></span></li>
+            <li class=" ">
+
+                    <a href="/en/earn" target="_self" data-element_type='navigation-link' data-link_container='header-menu' data-link_section data-link_title='earn-now' data-link_keycode>Earn Now</a><span class="background"></span>
+                <ul>
+                        <li>
+                            <a href="/en/earn" target="_self"data-element_type='navigation-link' data-link_container='header-menu' data-link_section='earn-now' data-link_title='earn-now-home' data-link_keycode>Earn Now Home</a>
+                            <div style="top: -35px;">
+<p>Check out all the fun and easy ways there are to earn.</p>
+<p><a class="cta" href="/en/earn" data-element_type='cta-link' data-link_container='header-menu' data-link_section='earn-now-home' data-link_title='go' data-link_keycode>Go &gt;</a></p>                                <span class="arrow" style="margin-top: 59px;"></span>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="/en/earn/ways-to-earn" target="_self"data-element_type='navigation-link' data-link_container='header-menu' data-link_section='earn-now' data-link_title='ways-to-earn-now' data-link_keycode>Ways to Earn Now</a>
+                            <div style="top: -35px;">
+<p>Special earning opportunities come and go. Check out what&rsquo;s happening right now.</p>
+<p><a class="cta" href="/en/earn/ways-to-earn" data-element_type='cta-link' data-link_container='header-menu' data-link_section='ways-to-earn-now' data-link_title='go' data-link_keycode>Go &gt;</a></p>                                <span class="arrow" style="margin-top: 59px;"></span>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="/en/earn/marketplace" target="_self"data-element_type='navigation-link' data-link_container='header-menu' data-link_section='earn-now' data-link_title='shop-the-marketplace' data-link_keycode>Shop The Marketplace</a>
+                            <div style="top: -35px;">
+<p>Use The Marketplace shopping portal to earn at your favorite retailers.</p>
+<p><a href="/en/earn/marketplace" target="_blank">Shop Now&nbsp;&gt;</a><a href="/en/earn/marketplace" target="_blank"></a></p>                                <span class="arrow" style="margin-top: 59px;"></span>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="/en/earn/discs" target="_self"data-element_type='navigation-link' data-link_container='header-menu' data-link_section='earn-now' data-link_title='register-discs' data-link_keycode>Register Discs</a>
+                            <div style="top: -35px;">
+<p>Register your DVDs and Blu-ray Discs for points.</p>
+<p><a class="cta" href="/en/earn/discs" data-element_type='cta-link' data-link_container='header-menu' data-link_section='register-discs' data-link_title='go' data-link_keycode>Go &gt;</a></p>                                <span class="arrow" style="margin-top: 59px;"></span>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="/en/earn/movie-tickets" target="_self"data-element_type='navigation-link' data-link_container='header-menu' data-link_section='earn-now' data-link_title='upload-movie-tickets' data-link_keycode>Upload Movie Tickets</a>
+                            <div style="top: -35px;">
+<p>Upload a movie stub. Or two. And earn up to 200 points per ticket.&nbsp;</p>
+<p><a class="cta" href="/en/earn/movie-tickets" data-element_type='cta-link' data-link_container='header-menu' data-link_section='upload-movie-tickets' data-link_title='go' data-link_keycode>Go &gt;</a></p>                                <span class="arrow" style="margin-top: 59px;"></span>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="/en/earn/pass" target="_self"data-element_type='navigation-link' data-link_container='header-menu' data-link_section='earn-now' data-link_title='rewards-passes' data-link_keycode>Rewards Passes</a>
+                            <div style="top: -35px;">
+<p><span>Score even more rewards with a Rewards Pass! Every unique pass you collect gets you a special reward.</span></p>
+<p><a href="/en/earn/pass" class="cta" data-element_type="cta-link" data-link_container="header-menu" data-link_section="rewards-pass" data-link_title="go" data-link_keycode="">Go &gt;</a></p>
+<p></p>                                <span class="arrow" style="margin-top: 59px;"></span>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="http://www.sonycard.com/en/gateway/?offerlink=SRcomDualCardNav5kJul2015" target="_blank"data-element_type='navigation-link' data-link_container='header-menu' data-link_section='earn-now' data-link_title='get-a-new-sony-or-playstation®card' data-link_keycode>Get a new Sony or PlayStation&#174;Card</a>
+                            <div style="top: -35px;">
+<p>The fastest way to earn points.</p>
+<p><a class="cta" href="http://www.sonycard.com/en/gateway/?offerlink=SRcomDualCardNav5kJul2015" data-element_type="cta-link" data-link_container="header-menu" data-link_section="get-sony-card-bonus-points" data-link_title="go" data-link_keycode="" target="_blank">Go &gt;</a></p>                                <span class="arrow" style="margin-top: 59px;"></span>
+                            </div>
+                        </li>
+                                        <li class="arrow"></li>
+                    <li class="spacer"></li>
+                </ul>
+            </li>
+            <li class=" ">
+
+                    <a href="/en/browse" target="_self" data-element_type='navigation-link' data-link_container='header-menu' data-link_section data-link_title='get-rewarded' data-link_keycode>Get Rewarded</a><span class="background"></span>
+                <ul>
+                        <li>
+                            <a href="/en/browse" target="_self"data-element_type='navigation-link' data-link_container='header-menu' data-link_section='get-rewarded' data-link_title='get-rewarded-home' data-link_keycode>Get Rewarded Home</a>
+                            <div style="top: -35px;">
+<p>Shop the rewards catalog, take advantage of Deals &amp; Steals or Insider Specials, and combine points with cash to get what you want faster.</p>
+<p><a class="cta" href="/en/browse" data-element_type='cta-link' data-link_container='header-menu' data-link_section='get-rewarded-home' data-link_title='go' data-link_keycode>Go &gt;</a></p>                                <span class="arrow" style="margin-top: 59px;"></span>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="/en/browse/" target="_self"data-element_type='navigation-link' data-link_container='header-menu' data-link_section='get-rewarded' data-link_title='shop-the-catalog' data-link_keycode>Shop the Catalog</a>
+                            <div style="top: -35px;">
+                                    <ul>
+                                        <li style="position: static;">
+                                            <a href="/en/browse/catalog/Movies" data-element_type='navigation-link' data-link_container='header-menu' data-link_section='shop-the-catalog' data-link_title='movies' data-link_keycode>Movies</a> <span class="arrow"></span>
+                                            <div style="min-height: 234px;">
+                                                <p>Find Blu-ray Discs&trade; and DVDs.</p>
+                                                <ul>
+                                                        <li><a href="/en/browse/catalog/Movies/Action-Adventure" data-element_type='navigation-link' data-link_container='header-menu' data-link_section='movies' data-link_title='action-adventure' data-link_keycode>Action/Adventure</a></li>
+                                                        <li><a href="/en/browse/catalog/Movies/Drama" data-element_type='navigation-link' data-link_container='header-menu' data-link_section='movies' data-link_title='drama' data-link_keycode>Drama</a></li>
+                                                        <li><a href="/en/browse/catalog/Movies/Children-Family" data-element_type='navigation-link' data-link_container='header-menu' data-link_section='movies' data-link_title='children-and-family' data-link_keycode>Children &amp; Family</a></li>
+                                                        <li><a href="/en/browse/catalog/Movies/Television" data-element_type='navigation-link' data-link_container='header-menu' data-link_section='movies' data-link_title='television' data-link_keycode>Television</a></li>
+                                                        <li><a href="/en/browse/catalog/Movies/Animation" data-element_type='navigation-link' data-link_container='header-menu' data-link_section='movies' data-link_title='animation' data-link_keycode>Animation</a></li>
+                                                </ul>
+                                                <a class="cta" href="/en/browse/catalog/Movies" data-element_type='cta-link' data-link_container='header-menu' data-link_section='shop-the-catalog' data-link_title='view-all' data-link_keycode>View All &gt;</a>
+                                            </div>
+                                        </li>
+                                        <li style="position: static;">
+                                            <a href="/en/browse/catalog/Music" data-element_type='navigation-link' data-link_container='header-menu' data-link_section='shop-the-catalog' data-link_title='music' data-link_keycode>Music</a> <span class="arrow"></span>
+                                            <div style="min-height: 234px;">
+                                                <p>Search by category or music genre.</p>
+                                                <ul>
+                                                        <li><a href="/en/browse/catalog/Music/Pop-Rock" data-element_type='navigation-link' data-link_container='header-menu' data-link_section='music' data-link_title='pop-and-rock' data-link_keycode>Pop &amp; Rock</a></li>
+                                                        <li><a href="/en/browse/catalog/Music/Comedy" data-element_type='navigation-link' data-link_container='header-menu' data-link_section='music' data-link_title='comedy' data-link_keycode>Comedy</a></li>
+                                                        <li><a href="/en/browse/catalog/Music/Christmas" data-element_type='navigation-link' data-link_container='header-menu' data-link_section='music' data-link_title='christmas' data-link_keycode>Christmas</a></li>
+                                                        <li><a href="/en/browse/catalog/Music/Classical" data-element_type='navigation-link' data-link_container='header-menu' data-link_section='music' data-link_title='classical' data-link_keycode>Classical</a></li>
+                                                        <li><a href="/en/browse/catalog/Music/Country" data-element_type='navigation-link' data-link_container='header-menu' data-link_section='music' data-link_title='country' data-link_keycode>Country</a></li>
+                                                </ul>
+                                                <a class="cta" href="/en/browse/catalog/Music" data-element_type='cta-link' data-link_container='header-menu' data-link_section='shop-the-catalog' data-link_title='view-all' data-link_keycode>View All &gt;</a>
+                                            </div>
+                                        </li>
+                                        <li style="position: static;">
+                                            <a href="/en/browse/catalog/PlayStation" data-element_type='navigation-link' data-link_container='header-menu' data-link_section='shop-the-catalog' data-link_title='games' data-link_keycode>Games</a> <span class="arrow"></span>
+                                            <div style="min-height: 234px;">
+                                                <p>Get the Playstation&reg; goods you want.</p>
+                                                <ul>
+                                                        <li><a href="/en/browse/catalog/PlayStation/PlayStation-Digital-Products" data-element_type='navigation-link' data-link_container='header-menu' data-link_section='games' data-link_title='playstation®-digital-products' data-link_keycode>PlayStation&#174; Digital Products</a></li>
+                                                        <li><a href="/en/browse/catalog/PlayStation/PlayStation-Network1" data-element_type='navigation-link' data-link_container='header-menu' data-link_section='games' data-link_title='playstation®network1' data-link_keycode>PlayStation&#174;Network1</a></li>
+                                                </ul>
+                                                <a class="cta" href="/en/browse/catalog/PlayStation" data-element_type='cta-link' data-link_container='header-menu' data-link_section='shop-the-catalog' data-link_title='view-all' data-link_keycode>View All &gt;</a>
+                                            </div>
+                                        </li>
+                                        <li style="position: static;">
+                                            <a href="/en/browse/catalog/Electronics" data-element_type='navigation-link' data-link_container='header-menu' data-link_section='shop-the-catalog' data-link_title='electronics' data-link_keycode>Electronics</a> <span class="arrow"></span>
+                                            <div style="min-height: 234px;">
+                                                <p>Shop for everything from TVs to mobile phones.</p>
+                                                <ul>
+                                                        <li><a href="/en/browse/catalog/Electronics/Headphones" data-element_type='navigation-link' data-link_container='header-menu' data-link_section='electronics' data-link_title='headphones' data-link_keycode>Headphones</a></li>
+                                                        <li><a href="/en/browse/catalog/Electronics/Televisions" data-element_type='navigation-link' data-link_container='header-menu' data-link_section='electronics' data-link_title='televisions' data-link_keycode>Televisions</a></li>
+                                                        <li><a href="/en/browse/catalog/Electronics/Portable-Speakers-Docking-Stations" data-element_type='navigation-link' data-link_container='header-menu' data-link_section='electronics' data-link_title='portable-speakers-and-docking-stations' data-link_keycode>Portable Speakers &amp; Docking Stations</a></li>
+                                                        <li><a href="/en/browse/catalog/Electronics/Blu-ray-Disc-DVD-Players" data-element_type='navigation-link' data-link_container='header-menu' data-link_section='electronics' data-link_title='blu-ray-disc-and-dvd-players' data-link_keycode>Blu-ray Disc &amp; DVD Players</a></li>
+                                                        <li><a href="/en/browse/catalog/Electronics/Clock-Portable-Radios" data-element_type='navigation-link' data-link_container='header-menu' data-link_section='electronics' data-link_title='clock-and-portable-radios' data-link_keycode>Clock &amp; Portable Radios</a></li>
+                                                </ul>
+                                                <a class="cta" href="/en/browse/catalog/Electronics" data-element_type='cta-link' data-link_container='header-menu' data-link_section='shop-the-catalog' data-link_title='view-all' data-link_keycode>View All &gt;</a>
+                                            </div>
+                                        </li>
+                                        <li style="position: static;">
+                                            <a href="/en/browse/search?minpoints=0" data-element_type='navigation-link' data-link_container='header-menu' data-link_section='shop-the-catalog' data-link_title='search-by-points' data-link_keycode>Search By Points</a> <span class="arrow"></span>
+                                            <div style="min-height: 234px;">
+                                                <p>See what you can get based on the number of points you have.</p>
+                                                <ul class="cols">
+                                                        <li><a href="/en/browse/search?minpoints=1&maxpoints=1000" data-element_type='navigation-link' data-link_container='header-menu' data-link_section='search-by-points' data-link_title='1-1000' data-link_keycode>1 - 1,000</a></li>
+                                                        <li><a href="/en/browse/search?minpoints=1001&maxpoints=2000" data-element_type='navigation-link' data-link_container='header-menu' data-link_section='search-by-points' data-link_title='1001-2000' data-link_keycode>1,001 - 2,000</a></li>
+                                                        <li><a href="/en/browse/search?minpoints=2000&maxpoints=5000" data-element_type='navigation-link' data-link_container='header-menu' data-link_section='search-by-points' data-link_title='2001-5000' data-link_keycode>2,001 - 5,000</a></li>
+                                                        <li><a href="/en/browse/search?minpoints=5000&maxpoints=10000" data-element_type='navigation-link' data-link_container='header-menu' data-link_section='search-by-points' data-link_title='5001-10000' data-link_keycode>5,001 - 10,000</a></li>
+                                                        <li><a href="/en/browse/search?minpoints=10001&maxpoints=20000" data-element_type='navigation-link' data-link_container='header-menu' data-link_section='search-by-points' data-link_title='10001-20000' data-link_keycode>10,001 - 20,000</a></li>
+                                                        <li><a href="/en/browse/search?minpoints=20001&maxpoints=50000" data-element_type='navigation-link' data-link_container='header-menu' data-link_section='search-by-points' data-link_title='20001-50000' data-link_keycode>20,001 - 50,000</a></li>
+                                                        <li><a href="/en/browse/search?minpoints=50001&maxpoints=" data-element_type='navigation-link' data-link_container='header-menu' data-link_section='search-by-points' data-link_title='50000+' data-link_keycode>50,000+</a></li>
+                                                </ul>
+                                                <p><small>Don't have enough? Buy points at checkout.</small>
+                                                </p>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                <span class="arrow" style="margin-top: 59px;"></span>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="/en/deals/" target="_self"data-element_type='navigation-link' data-link_container='header-menu' data-link_section='get-rewarded' data-link_title='deals-and-steals' data-link_keycode>Deals &amp; Steals</a>
+                            <div style="top: -35px;">
+<p>Take advantage of great prices on hot items here.</p>
+<ul>
+<li style="position: static;"><a href="/en/deals/Auction"  data-element_type='navigation-link' data-link_container='header-menu' data-link_section='deals-and-steals' data-link_title='reverse-auction' data-link_keycode>Reverse Auction</a></li>
+<li style="position: static;"><a href="/en/deals/DealofTheWeek" data-element_type='navigation-link' data-link_container='header-menu' data-link_section='deals-and-steals' data-link_title='deal-of-the-week' data-link_keycode>Deal of the Week</a></li>
+<li style="position: static;"><a href="/en/deals/DealofTheDay" data-element_type='navigation-link' data-link_container='header-menu' data-link_section='deals-and-steals' data-link_title='deal-of-the-day' data-link_keycode>Deal of the Day</a></li></ul>                                <span class="arrow" style="margin-top: 59px;"></span>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="/en/browse/dualsale" target="_self"data-element_type='navigation-link' data-link_container='header-menu' data-link_section='get-rewarded' data-link_title='sale' data-link_keycode>Sale</a>
+                            <div style="top: -35px;">
+<p>Find out what's on sale now.</p>
+<ul>
+<li style="position: static;"><a class="cta" href="/en/browse/catalog/Insider%20Special" data-element_type="cta-link" data-link_container="header-menu" data-link_section="sale" data-link_title="insider specials" data-link_keycode="">Insider Specials &gt;</a></li>
+<li style="position: static;"><a class="cta" href="/en/browse/sales" data-element_type="cta-link" data-link_container="header-menu" data-link_section="sale" data-link_title="power sale" data-link_keycode="">Power Sale &gt;</a></li>
+</ul>                                <span class="arrow" style="margin-top: 59px;"></span>
+                            </div>
+                        </li>
+                                        <li class="arrow"></li>
+                    <li class="spacer"></li>
+                </ul>
+            </li>
+            <li class=" dropleft">
+
+                    <a href="/en/ultimate-rewards" target="_self" data-element_type='navigation-link' data-link_container='header-menu' data-link_section data-link_title='ultimate-rewards' data-link_keycode>Ultimate Rewards</a><span class="background"></span>
+                <ul>
+                        <li>
+                            <a href="/en/ultimate-rewards" target="_self"data-element_type='navigation-link' data-link_container='header-menu' data-link_section='ultimate-rewards' data-link_title='ultimate-rewards-home' data-link_keycode>Ultimate Rewards Home</a>
+                            <div style="top: -35px;">
+<p>Check out the ultimate rewards.</p>
+<p><a class="cta" href="/en/ultimate-rewards"  data-element_type='cta-link' data-link_container='header-menu' data-link_section='ultimate-rewards-home' data-link_title='go' data-link_keycode>Go &gt;</a></p>                                <span class="arrow" style="margin-top: 59px;"></span>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="/en/showstoppers/" target="_self"data-element_type='navigation-link' data-link_container='header-menu' data-link_section='ultimate-rewards' data-link_title='showstoppers' data-link_keycode>ShowStoppers</a>
+                            <div style="top: -35px;">
+<p><span>Check out the lastest VIP experiences, signed movie posters or concert tickets to bid on.</span></p>
+<p><a class="cta" href="/en/showstoppers" data-element_type='cta-link' data-link_container='header-menu' data-link_section='showstoppers' data-link_title='go' data-link_keycode>Go &gt;</a></p>                                <span class="arrow" style="margin-top: 59px;"></span>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="/en/showstoppers/winners-circle" target="_self"data-element_type='navigation-link' data-link_container='header-menu' data-link_section='ultimate-rewards' data-link_title='winners-circle' data-link_keycode>Winners Circle</a>
+                            <div style="top: -35px;">
+<p>Check out other members&rsquo; amazing experiences.</p>
+<p><a class="cta" href="/en/showstoppers/winners-circle" data-element_type='cta-link' data-link_container='header-menu' data-link_section='winners-circle' data-link_title='go' data-link_keycode>Go &gt;</a></p>                                <span class="arrow" style="margin-top: 59px;"></span>
+                            </div>
+                        </li>
+                                        <li class="arrow"></li>
+                    <li class="spacer"></li>
+                </ul>
+            </li>
+            <li class=" dropleft">
+
+                    <a href="/en/account/pass" target="_self" data-element_type='navigation-link' data-link_container='header-menu' data-link_section data-link_title='my-rewards' data-link_keycode>My Rewards</a><span class="background"></span>
+                <ul>
+                        <li>
+                            <a href="/en/account/pass" target="_self"data-element_type='navigation-link' data-link_container='header-menu' data-link_section='my-rewards' data-link_title='my-rewards-home' data-link_keycode>My Rewards Home</a>
+                            <div style="top: -35px;">
+<p>Customize your Sony Rewards experience by setting your account preferences, updating your Wish List, managing your Rewards passes and keeping track of your account history.</p>
+<p><a href="/en/account/pass" class="cta" data-element_type='cta-link' data-link_container='header-menu' data-link_section='my-rewards-home' data-link_title='go' data-link_keycode>Go &gt;</a></p>                                <span class="arrow" style="margin-top: 59px;"></span>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="/en/account/profile/survey/" target="_self"data-element_type='navigation-link' data-link_container='header-menu' data-link_section='my-rewards' data-link_title='my-preferences' data-link_keycode>My Preferences</a>
+                            <div style="top: -35px;">
+<p>Tell us about yourself to help us personalize your experience and tailor our offers just for you.</p>
+<p><a href="/en/account/profile/survey/" class="cta" data-element_type='cta-link' data-link_container='header-menu' data-link_section='my-preferences' data-link_title='go' data-link_keycode>Go &gt;</a></p>                                <span class="arrow" style="margin-top: 59px;"></span>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="/en/account/profile/preferences" target="_self"data-element_type='navigation-link' data-link_container='header-menu' data-link_section='my-rewards' data-link_title='my-contact-options' data-link_keycode>My Contact Options</a>
+                            <div style="top: -35px;">
+<p>Be the first to know about offers and promos!&nbsp;Plus, choose which updates you wish to receive.</p>
+<p><a href="/en/account/profile/preferences" class="cta" data-element_type='cta-link' data-link_container='header-menu' data-link_section='my-contact-options' data-link_title='go' data-link_keycode>Go &gt;</a></p>                                <span class="arrow" style="margin-top: 59px;"></span>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="/en/account/profile" target="_self"data-element_type='navigation-link' data-link_container='header-menu' data-link_section='my-rewards' data-link_title='personal-information' data-link_keycode>Personal Information</a>
+                            <div style="top: -35px;">
+<p>Update your personal information, profile picture and password.</p>
+<p><a href="/en/account/profile" class="cta" data-element_type='cta-link' data-link_container='header-menu' data-link_section='personal-information' data-link_title='go' data-link_keycode>Go &gt;</a></p>                                <span class="arrow" style="margin-top: 59px;"></span>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="/en/account/linked-accounts" target="_self"data-element_type='navigation-link' data-link_container='header-menu' data-link_section='my-rewards' data-link_title='linked-accounts' data-link_keycode>Linked Accounts</a>
+                            <div style="top: -35px;">
+<p>Link your Sony Entertainment Network, Facebook and Sony Card<sup>SM</sup>/PlayStation Card<sup>&reg;</sup>&nbsp;accounts here.</p>
+<p><a href="/en/account/linked-accounts" class="cta" data-element_type="cta-link" data-link_container="header-menu" data-link_section="linked-accounts" data-link_title="go" data-link_keycode="">Go &gt;</a></p>                                <span class="arrow" style="margin-top: 59px;"></span>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="/en/account/transactions" target="_self"data-element_type='navigation-link' data-link_container='header-menu' data-link_section='my-rewards' data-link_title='my-transactions' data-link_keycode>My Transactions</a>
+                            <div style="top: -35px;">
+<p>See your available points and view your transaction history.</p>
+<p><a href="/en/account/transactions" class="cta" data-element_type='cta-link' data-link_container='header-menu' data-link_section='my-transactions' data-link_title='go' data-link_keycode>Go &gt;</a></p>                                <span class="arrow" style="margin-top: 59px;"></span>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="/en/account/wishlist" target="_self"data-element_type='navigation-link' data-link_container='header-menu' data-link_section='my-rewards' data-link_title='my-wish-list' data-link_keycode>My Wish List</a>
+                            <div style="top: -35px;">
+<p>Update your Wish List to make it come true.</p>
+<p><a href="/en/account/wishlist" class="cta" data-element_type='cta-link' data-link_container='header-menu' data-link_section='my-wish-list' data-link_title='go' data-link_keycode>Go &gt;</a></p>                                <span class="arrow" style="margin-top: 59px;"></span>
+                            </div>
+                        </li>
+                                        <li class="arrow"></li>
+                    <li class="spacer"></li>
+                </ul>
+            </li>
+            <li class=" dropleft">
+
+                    <a href="/en/how-it-works/program-details/" target="_self" data-element_type='navigation-link' data-link_container='header-menu' data-link_section data-link_title='about' data-link_keycode>About</a><span class="background"></span>
+                <ul>
+                        <li>
+                            <a href="/en/how-it-works/program-details/" target="_self"data-element_type='navigation-link' data-link_container='header-menu' data-link_section='about' data-link_title='about-sony-rewards' data-link_keycode>About Sony Rewards</a>
+                            <div style="top: -35px;">
+<p>Find out all there is to know about Sony Rewards.</p>
+<p><a class="cta" href="/en/how-it-works/program-details/" data-element_type='cta-link' data-link_container='header-menu' data-link_section='about-sony-rewards' data-link_title='go' data-link_keycode>Go &gt;</a></p>                                <span class="arrow" style="margin-top: 59px;"></span>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="/en/how-it-works/faq" target="_self"data-element_type='navigation-link' data-link_container='header-menu' data-link_section='about' data-link_title='faqs' data-link_keycode>FAQs</a>
+                            <div style="top: -35px;">
+<p>Got a question?<br /> We've got the answer.</p>
+<p><a class="cta" href="/en/how-it-works/faq"  data-element_type='cta-link' data-link_container='header-menu' data-link_section='faqs' data-link_title='go' data-link_keycode>Go &gt;</a></p>                                <span class="arrow" style="margin-top: 59px;"></span>
+                            </div>
+                        </li>
+                                        <li class="arrow"></li>
+                    <li class="spacer"></li>
+                </ul>
+            </li>
+    </ul>
+</nav>
+    <nav class="nav icons drop inline" data-delay="500">
+        <ul>
+            <li class="search persistent">
+                <a class="sr-icon-search" href="javascript:void(0)" title="Search" data-toggle-event="searchBarOpen" onclick="$('.search.persistent').addClass('hover');"><span class="visuallyhidden">Search</span></a>
+                <span class="background"></span>
+                <span class="arrow"></span>
+                <div id="searchDiv">
+                    <form class="form-inline">
+                        <div class="form-group">
+                            <input type="text" class="form-control input-sm dark inline" placeholder="Search Catalog" id="searchCatalogInput">
+                            <button type="submit" class="btn sr-icon"><span class="sr-icon-search"></span></button>
+                            <a class="close btn searchclosebtn" onclick="$('.search.persistent').removeClass('hover');">X</a>
+                        </div>
+                    </form>
+                </div>
+            </li>
+            <li class="recentlyviewed myRecentlyViewedNavHeader">
+                <a class="sr-icon-watch" href="javascript:void(0)" title="Recently Viewed" data-toggle-event="recentlyViewedOpen">
+                    <span class="visuallyhidden">Recently Viewed</span>
+                </a>
+                <span class="background"></span>
+                <span class="arrow"></span>
+                <div class="cartlist">
+                    <p class="emtext">My Recently Viewed <a href="/en/browse/catalog">(0)</a>
+                    </p>
+                    <div class="emtext" style="text-align: center;"></div>
+                </div>
+            </li>
+            <li class="myCartNavHeader">
+                <a class="sr-icon-cart" href="/en/cart" title="My Cart" data-toggle-event="myCartOpen">
+                        <span class="cart-alert"></span>
+                        <span class="sr-shape-circle" style="display: none"></span>
+                    <span class="visuallyhidden">My Cart</span>
+                </a>
+                <span class="background"></span>
+                <span class="arrow"></span>
+                <div class="cartlist">
+                    <p class="emtext">My Cart <a href="/en/cart/">(0)</a>
+                    </p>
+                    <div class="emtext" style="text-align: center;">Loading Cart...</div>
+                </div>
+            </li>
+        </ul>
+    </nav>
+</div>
+</section>
+    
+
+
+<script type="text/javascript" src="/Content/web/js/myAccount.js"></script>
+		    </header>
+	        <div style="position:relative;">
+		        
+
+<div class="navmobile navtop">
+	<section class="headline">
+		<div class="wrap mwrap">
+			<a data-toggle-event="mobileMenuShow" class="mobilemenutoggle sr-icon-menu dataclassevent" href="javascript:void(0)"><span class="visuallyhidden">Menu</span></a>
+			<h1 class="brand"><a class="sr-logo" href="/"><span class="visuallyhidden">Sony Rewards</span></a></h1>
+			<nav data-delay="500" class="nav icons accordion inline">
+				<ul>
+					<li class="search persistent">
+						<a data-toggle-event="searchBarOpen" title="Search" href="javascript:void(0)" class="sr-icon-search"><span class="visuallyhidden">Search</span></a>
+						<span class="background"></span>
+						<span class="arrow"></span>
+						<div>
+							<form class="form-inline">
+								<div class="form-group">
+									<input type="text" size="41" placeholder="Search Catalog" class="form-control input-sm dark inline">
+								</div>
+								<button class="btn sr-icon" type="submit"><span class="sr-icon-search"></span></button>
+							</form>
+						</div>
+					</li>
+                    <li class="myCartNavHeader">
+                        <a class="sr-icon-cart" href="/en/cart" title="My Cart">
+                                <span class="cart-alert"></span>
+                                <span class="sr-shape-circle" style="display: none"></span>
+                            <span class="visuallyhidden">My Cart</span>
+                        </a>
+                        <span class="background"></span>
+                        <span class="arrow"></span>
+                        <div class="cartlist">
+                            <p class="emtext">My Cart <a href="/en/cart/">(0)</a></p>
+                            <div class="emtext" style="text-align: center;">Loading Cart...</div>
+                        </div>
+                    </li>
+				</ul>
+			</nav>
+			<a class="brand" href="/">
+				<img width="140" height="140" src="/content/web/img/logo-sonyrewards-bw.png" class="brand"></a>
+		</div>
+	</section>
+				
+		
+</div>
+
+		        
+
+
+<div class="navmobile navside">
+	<section class="dropdown">
+		<div class="wrap mwrap row">
+			<div class="col4 userlogin padright-ex hidden-menu-md">
+				<p class="emtext">Join</p>
+				<p>You'll be getting rewarded with cool things and awesome experiences before you know it.</p>
+			</div>
+
+			<nav class="col3 nav pad-ex social hidden-menu-md">
+				<ul  style="margin-top: 37px;" >
+					<li class="facebook add-bottom-ex row">
+						<a class="btn btn-sm col12 facebook" href="https://www.facebook.com/SonyRewards"><span class="icon sr-social-facebook"></span><span class="text">Facebook</span></a>
+					</li>
+														</ul>
+				<span class="orsep">or</span>
+			</nav>
+			<div class="col4 nav pad-ex hidden-menu-md">
+				<a class="btn btn-sm primary float-left verticalcenter" href="/en/register">Join</a>
+			</div>
+
+				<div class="mcount2">
+					<a class="mcols madd btn btn-mlg primary" href="/en/login">Log In</a>
+					<a class="mcols madd btn btn-mlg primary" href="/en/register">Join</a>
+				</div>
+			<a data-toggle-event="dropDownHide" class="btn close hidden-menu-md" href="#">Ã—</a>
+		</div>
+	</section>
+	<section class="navigation">
+		<nav data-delay="500" class="nav main accordion closed">
+			<ul>
+				
+				<li class=" ">
+					<a href="/en/earn">Earn Now</a><span class="background"></span>
+					<ul>
+						<li>
+							<a href="/en/earn" target="_self">Earn Now Home</a>
+						</li>
+						<li>
+							<a href="/en/earn/ways-to-earn" target="_self">Ways to Earn Now</a>
+						</li>
+						<li>
+							<a href="/en/earn/marketplace" target="_self">Shop The Marketplace</a>
+						</li>
+						<li>
+							<a href="/en/earn/discs" target="_self">Register Discs</a>
+						</li>
+						<li>
+							<a href="/en/earn/movie-tickets" target="_self">Upload Movie Tickets</a>
+						</li>
+						<li>
+							<a href="/en/earn/pass" target="_self">Rewards Passes</a>
+						</li>
+						<li>
+							<a href="http://www.sonycard.com/en/gateway/?offerlink=SRcomDualCardNav5kJul2015" target="_blank">Get a new Sony or PlayStation&#174;Card</a>
+						</li>
+										</ul>
+				</li>
+				<li class=" ">
+					<a href="/en/browse">Get Rewarded</a><span class="background"></span>
+					<ul>
+						<li>
+							<a href="/en/browse" target="_self">Get Rewarded Home</a>
+						</li>
+						<li>
+							<a href="/en/browse/" target="_self">Shop the Catalog</a>
+						</li>
+						<li>
+							<a href="/en/deals/" target="_self">Deals &amp; Steals</a>
+						</li>
+						<li>
+							<a href="/en/browse/dualsale" target="_self">Sale</a>
+						</li>
+										</ul>
+				</li>
+				<li class=" dropleft">
+					<a href="/en/ultimate-rewards">Ultimate Rewards</a><span class="background"></span>
+					<ul>
+						<li>
+							<a href="/en/ultimate-rewards" target="_self">Ultimate Rewards Home</a>
+						</li>
+						<li>
+							<a href="/en/showstoppers/" target="_self">ShowStoppers</a>
+						</li>
+						<li>
+							<a href="/en/showstoppers/winners-circle" target="_self">Winners Circle</a>
+						</li>
+										</ul>
+				</li>
+				<li class=" dropleft">
+					<a href="/en/account/pass">My Rewards</a><span class="background"></span>
+					<ul>
+						<li>
+							<a href="/en/account/pass" target="_self">My Rewards Home</a>
+						</li>
+						<li>
+							<a href="/en/account/profile/survey/" target="_self">My Preferences</a>
+						</li>
+						<li>
+							<a href="/en/account/profile/preferences" target="_self">My Contact Options</a>
+						</li>
+						<li>
+							<a href="/en/account/profile" target="_self">Personal Information</a>
+						</li>
+						<li>
+							<a href="/en/account/linked-accounts" target="_self">Linked Accounts</a>
+						</li>
+						<li>
+							<a href="/en/account/transactions" target="_self">My Transactions</a>
+						</li>
+						<li>
+							<a href="/en/account/wishlist" target="_self">My Wish List</a>
+						</li>
+										</ul>
+				</li>
+				<li class=" dropleft">
+					<a href="/en/how-it-works/program-details/">About</a><span class="background"></span>
+					<ul>
+						<li>
+							<a href="/en/how-it-works/program-details/" target="_self">About Sony Rewards</a>
+						</li>
+						<li>
+							<a href="/en/how-it-works/faq" target="_self">FAQs</a>
+						</li>
+										</ul>
+				</li>
+							</ul>
+		</nav>
+	</section>
+</div>
+
+	        </div>
+
+<section class="dropdown">
+    <div class="wrap mwrap row" id="grayNav">
+            <div class="loginWrap">
+                <div class="col4 userlogin padright-ex">
+                        <p class="emtext">Log in</p>
+                    <p>You'll be getting rewarded with cool things and awesome experiences before you know it.</p>
+                </div>
+                <nav class="col3 nav pad-ex social">
+                    
+                    <ul>
+                        <!-- this is a test-->
+                            <li class="facebook add-bottom-ex row" style="padding-top: 35px;">
+                                <a class="btn btn-sm col12 facebook" href="#" onclick="facebook_popup_login('/en/home/?fi=15');"><span class="icon sr-social-facebook"></span><span class="text">Log in via Facebook</span></a>
+                            </li>
+                                                    <span class="orsep">or</span>
+                    </ul>
+                </nav>
+                <div class="col4 mainLogin">
+                    <form id="headerLogin" method="post" class="col4 nav pad-ex row"
+                          action="https://www.sonyrewards.com/en/login?u=%2fen%2fhome%2f">
+                        <input name="__RequestVerificationToken" type="hidden" value="cT3uL631mUQqenyGVoMcEKbt7fZqgTZ7vKGFQYkEVxkOudFIca-N4lJG160Oel5Ky7d_AFRfEkEfndQW5PXjbunje-hrIM-GqrqoGUggLRWXI4UCs-yTCCa3IzgiklGzE9SbKQ2" />
+                        <input type="text" name="loginUsername" id="loginemail" class="form-control col12 add-bottom-ex input-sm" placeholder="Email" autocomplete="off" value=""><br>
+                        <input type="password" name="loginpassword" id="loginpassword" class="form-control col12 add-bottom-ex input-sm" placeholder="Password" autocomplete="off"><br>
+
+
+                        <input type="hidden" name="PageName" id="PageName" />
+                        <div class="userforgot float-left pad-right">
+                            <a href="/en/login/forgot-password/">Forgot password?</a>
+                            <div class="form-group">
+                                <label class="checkbox styled">
+                                    <input type="checkbox" class="rememberme"  name="RememberMe" value="true">Remember Me
+                                </label>
+                            </div>
+                        </div>
+                        <button type="submit" name="login" class="btn btn-sm primary float-right">Log In</button>
+                    </form>
+                </div>
+            </div>
+    </div>
+</section>
+
+
+
+
+<div id="page" class="page-">
+	<article id="maincontent" class="bg-white row">
+		
+        <section class="carousel containerClass module-cl GetRewardedOverride bg-white" data-containerindex="0" data-sharedcmsname="_CarouseHeroA4" data-marketkeycode="">
+            <div class="sldr" data-sldr-time="7000" data-sldr-auto="false">
+                <ul class="wrp">
+
+                        <li class="slide-0 row" style="">
+                            <div class="moduleClass wrp" data-sharedcmsname="A04" data-moduleIdentifier="HolidayInsiderSpecialsW1-SR-Home-A4-TPZ9JSV5" data-marketKeyCode="TPZ9JSV5">
+		<div class="bg-white-trans image-card" >
+				<h1 class="image-card-headline">Enjoy the present.</h1>
+							<div class="image-card-text"><p><span data-sheets-value="{&quot;1&quot;:2,&quot;2&quot;:&quot;Make this holiday season memorable and save up to 44% on TVs, headphones, wireless speakers and more.&quot;}" data-sheets-userformat="{&quot;2&quot;:771,&quot;3&quot;:[null,0],&quot;4&quot;:[null,2,16773836],&quot;11&quot;:4,&quot;12&quot;:0}">Make this holiday season memorable and save up to 44% on TVs, headphones, wireless speakers and more.</span></p></div>
+							<a class="btn orange image-card-button A04Anchor" href="/en/browse/catalog/Insider%20Special "
+					data-personaperformaction="" 
+					data-personaaction="" 
+					data-personaaction-value="0"  target="_self" 
+				   onclick="sr.common.gaModuleItemClickTrack(this);"
+                    data-element_type="module-link"
+                   data-link_container="on-page"
+			       data-link_section
+			       data-link_title="HolidayInsiderSpecialsW1-SR-Home-A4-TPZ9JSV5"
+                   data-link_keycode="TPZ9JSV5">
+					SHOP NOW
+				</a>
+		</div>
+	<div class="img-wrap">
+		<div class="skew-right">
+			<div>
+				<div class="full">
+					<img src="/Content/Shared/Img/holidayinsiderspecialsw1-sr-home-a4-tpz9jsv5/18193_Dec_Redemption_BN_A4_D_v1_r02.jpg" style="max-height:332px" alt="Enjoy the present.">
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+                        </li>
+                        <li class="slide-1 row" style="">
+                            <div class="moduleClass wrp" data-sharedcmsname="A04" data-moduleIdentifier="RomanJIsraelEsqTicketUpload-SPE-Home-A4-2P5CKSY2" data-marketKeyCode="2P5CKSY2">
+		<div class="bg-white-trans image-card" >
+				<h1 class="image-card-headline">All rise. </h1>
+							<div class="image-card-text"><p><span data-sheets-value="{&quot;1&quot;:2,&quot;2&quot;:&quot;Earn points when you upload your Roman J. Israel, Esq. movie tickets by December 4th.&quot;}" data-sheets-userformat="{&quot;2&quot;:771,&quot;3&quot;:[null,0],&quot;4&quot;:[null,2,16773836],&quot;11&quot;:4,&quot;12&quot;:0}"><span>Earn points when you upload your </span><em>Roman J. Israel, Esq. </em><span>movie tickets by December 4th.</span></span></p></div>
+							<a class="btn orange image-card-button A04Anchor" href="/en/earn/movie-tickets"
+					data-personaperformaction="" 
+					data-personaaction="" 
+					data-personaaction-value="0"  target="_self" 
+				   onclick="sr.common.gaModuleItemClickTrack(this);"
+                    data-element_type="module-link"
+                   data-link_container="on-page"
+			       data-link_section
+			       data-link_title="RomanJIsraelEsqTicketUpload-SPE-Home-A4-2P5CKSY2"
+                   data-link_keycode="2P5CKSY2">
+					EARN NOW
+				</a>
+		</div>
+	<div class="img-wrap">
+		<div class="skew-right">
+			<div>
+				<div class="full">
+					<img src="/Content/Shared/Img/romanjisraelesqticketupload-spe-home-a4-2p5cksy2/A4SRHero_RJITixUp.jpg" style="max-height:332px" alt="All rise. ">
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+                        </li>
+                        <li class="slide-2 row" style="">
+                            <div class="moduleClass wrp" data-sharedcmsname="A04" data-moduleIdentifier="MarketplaceNovember-SR-Home-A4-OUVHX2Y8" data-marketKeyCode="OUVHX2Y8">
+		<div class="bg-white-trans image-card" >
+				<h1 class="image-card-headline">Shop online and earn this holiday season.</h1>
+							<div class="image-card-text"><p><span data-sheets-value="{&quot;1&quot;:2,&quot;2&quot;:&quot;Earn up to 12X points when you shop retailers online through the Marketplace.&quot;}" data-sheets-userformat="{&quot;2&quot;:771,&quot;3&quot;:[null,0],&quot;4&quot;:[null,2,14281427],&quot;11&quot;:4,&quot;12&quot;:0}">Earn up to 12X points when you shop retailers online through the Marketplace.</span></p></div>
+							<a class="btn orange image-card-button A04Anchor" href="https://themarketplace.sonyrewards.com/category/blackfriday/cashback/"
+					data-personaperformaction="" 
+					data-personaaction="" 
+					data-personaaction-value="0"  target="_self" 
+				   onclick="sr.common.gaModuleItemClickTrack(this);"
+                    data-element_type="module-link"
+                   data-link_container="on-page"
+			       data-link_section
+			       data-link_title="MarketplaceNovember-SR-Home-A4-OUVHX2Y8"
+                   data-link_keycode="OUVHX2Y8">
+					SHOP AND EARN NOW
+				</a>
+		</div>
+	<div class="img-wrap">
+		<div class="skew-right">
+			<div>
+				<div class="full">
+					<img src="/Content/Shared/Img/marketplacenovember-sr-home-a4-ouvhx2y8/A4SRHero_HolidayMktp.jpg" style="max-height:332px" alt="Shop online and earn this holiday season.">
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+                        </li>
+                        <li class="slide-3 row" style="">
+                            <div class="moduleClass wrp" data-sharedcmsname="A04" data-moduleIdentifier="TheStarTicketUpload-SPE-Home-A4-A3CUDP29" data-marketKeyCode="A3CUDP29">
+		<div class="bg-white-trans image-card" >
+				<h1 class="image-card-headline">The story of the first Christmas.</h1>
+							<div class="image-card-text"><p><span data-sheets-value="{&quot;1&quot;:2,&quot;2&quot;:&quot;Earn points when you upload your movie tickets for The Star by December 4th.&quot;}" data-sheets-userformat="{&quot;2&quot;:771,&quot;3&quot;:[null,0],&quot;4&quot;:[null,2,16773836],&quot;11&quot;:4,&quot;12&quot;:0}"><span>Earn points when you upload your movie tickets for </span><em>The Star </em><span>by December 4th.</span></span></p></div>
+							<a class="btn orange image-card-button A04Anchor" href="/en/earn/movie-tickets"
+					data-personaperformaction="" 
+					data-personaaction="" 
+					data-personaaction-value="0"  target="_self" 
+				   onclick="sr.common.gaModuleItemClickTrack(this);"
+                    data-element_type="module-link"
+                   data-link_container="on-page"
+			       data-link_section
+			       data-link_title="TheStarTicketUpload-SPE-Home-A4-A3CUDP29"
+                   data-link_keycode="A3CUDP29">
+					EARN NOW
+				</a>
+		</div>
+	<div class="img-wrap">
+		<div class="skew-right">
+			<div>
+				<div class="full">
+					<img src="/Content/Shared/Img/thestarticketupload-spe-home-a4-a3cudp29/A4SRHero_TheStarTixUp.jpg" style="max-height:332px" alt="The story of the first Christmas.">
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+                        </li>
+                </ul>
+            </div>
+            <ul class="pill-nav visible-xs">
+                    	<li><a href="#">•</a></li>
+                    	<li><a href="#">•</a></li>
+                    	<li><a href="#">•</a></li>
+                    	<li><a href="#">•</a></li>
+                </ul>
+            <a href="#" class="sldr-nav prev sr-arrow-solid-left"></a>
+            <a href="#" class="sldr-nav next sr-arrow-solid-right"></a>
+        </section>
+
+<div class="bg-white">	<section  data-sharedCmsName='ContainerB' class="containerClass ContainerB" data-containerIndex="1" data-marketKeyCode="">
+		<div class="wrap padding-top padding-bottom ">
+			<div class="row sepcols">
+<div class="minheight1 col3">
+	<div id="EV4nMn7rMEiCx1XVrR2MQ" class="moduleClass module-e minheight3 col3" data-sharedCmsName='E01' data-moduleIdentifier="MovieBuffPass-SR-Home-ModE-JZNXH2YQ" data-marketKeyCode="JZNXH2YQ">
+		<div class="img-wrap">
+			<a href="/en/earn/pass" target="_self"><img src="/Content/Shared/Img/rewardspass-sr-home-mode-/mb_srweb_01.jpg" alt="Movie Buff Pass" style="max-height:109px;"/></a>
+		</div>
+		<div class="txt-wrap" style="max-height: 81px">
+			<h3><a href="http://sonyrewards.com/en/earn/pass" target="_"> Register 5 discs </a> and earn a free movie </h3>
+		</div>
+		
+
+
+	</div>
+	<div id="3vDgS1YYQUq4YrZNNl8ZuQ" class="moduleClass module-e minheight3 col3" data-sharedCmsName='E01' data-moduleIdentifier="Home-second-DualCard-WVYZV3FD" data-marketKeyCode="WVYZV3FD">
+		<div class="img-wrap">
+			<a href="http://www.sonycard.com/en/gateway/?offerlink=SRcomDualCardNavigation5kJul2015" target="_blank"><img src="/Content/Shared/Img/home-second-dualcard-wvyzv3fd/11419_CardRefresh_Bundle3_237x114DUalCardBanner_.png" alt="Sony Card PlayStation Card" style="max-height:109px;"/></a>
+		</div>
+		<div class="txt-wrap" style="max-height: 81px">
+			<h3>A faster <a href="http://www.sonycard.com/en/gateway/?offerlink=SRcomDualCardNavigation5kJul2015">way</a> to be rewarded</h3>
+		</div>
+		
+
+
+	</div>
+</div>
+<div id="TV8L5MlcREKQzDraCcppg" class="moduleClass module-c minheight1 col6" data-sharedCmsName="C08P" data-moduleIdentifier="Deal of the Week (C)-HVQ0N4M0" data-marketKeyCode="HVQ0N4M0">
+	<div class="txt-wrap" style="max-height: 75px">
+		<h2>Deal of the Week</h2>
+				<p>Full HD 60p Camcorder</p>
+	</div>
+	<div class="img-wrap">
+		    <a href="/en/deals/DealofTheWeek" 
+		       target="_self"
+               data-element_type="module-link"
+                data-link_container="on-page"
+			    data-link_section="module-image"
+			    data-link_title="Deal of the Week (C)-HVQ0N4M0"
+                data-link_keycode="HVQ0N4M0"><img src="http://www.sonyrewards.com/assets/activity/HDRCX405B_fe988e3e61044ad194e9a3bce3ea6fcf.png" alt="Full HD 60p Camcorder" style="max-height: 230px;" /></a>
+	</div>
+	    <a class="btn orange" 
+	       href="/en/deals/DealofTheWeek" 
+	       data-personaperformaction="" 
+	       data-personaaction="" 
+	       data-personaaction-value="0" 
+	       target="_self"
+            data-element_type="module-link"
+            data-link_container="on-page"
+			data-link_section="module-button"
+			data-link_title="Deal of the Week (C)-HVQ0N4M0"
+            data-link_keycode="HVQ0N4M0">Learn More</a>
+	
+
+<ul class="socialshare">
+		<li><a class="sr-social-facebook -1" href="#" onclick="window.open('http://www.sonyrewards.com/en/widget/FacebookLink?link=/en/deals/DealofTheWeek&amp;utm_medium=social_media&amp;utm_source=facebook&amp;utm_campaign=HVQ0N4M0&amp;utm_content=deal_of_the_week&amp;title=Full HD 60p Camcorder&amp;summary=&amp;linkType=Image&amp;pictureVideo=http://www.sonyrewards.com/assets/activity/HDRCX405B_fe988e3e61044ad194e9a3bce3ea6fcf.png', 'FacebookShare', 'width=700, height=500'); return false;"></a></li>
+			<li><a class="sr-social-twitter" href="#" onclick="window.open('http://www.sonyrewards.com/en/widget/TwitterLink?link=/en/deals/DealofTheWeek&amp;utm_medium=social_media&amp;utm_source=twitter&amp;utm_campaign=HVQ0N4M0&amp;utm_content=deal_of_the_week&amp;text=', 'TwitterShare', 'width=700, height=500'); return false;"></a></li>
+			<li><a class="sr-social-google-plus" href="#" onclick="window.open('http://www.sonyrewards.com/en/widget/Googleplus?link=/en/deals/DealofTheWeek&amp;utm_medium=social_media&amp;utm_source=googleplus&amp;utm_campaign=HVQ0N4M0&amp;utm_content=deal_of_the_week', 'GoogleShare', 'width=700, height=500'); return false;"></a></li>
+</ul>
+
+</div><div class="minheight1 col3">
+	<div id="roSa8QagEyz4YmjUwCew" class="moduleClass module-e minheight3 col3" data-sharedCmsName='E01' data-moduleIdentifier="Insider Specials Generic E-P916QZVH" data-marketKeyCode="P916QZVH">
+		<div class="img-wrap">
+			<a href="/en/browse/catalog/Insider%20Special" target="_blank"><img src="/Content/Shared/Img/insider_specials_generic_e-p916qzvh/E1-InsiderSpecial-01-15.jpg" alt="Save big. Shop the latest Insider Specials" style="max-height:109px;"/></a>
+		</div>
+		<div class="txt-wrap" style="max-height: 81px">
+			<h3>Save big. Shop the latest <a href="/en/browse/catalog/Insider%20Special/">Insider Specials</a></h3>
+		</div>
+		
+
+
+	</div>
+	<div id="8Gy8a5uhRUuSa9IvfkLXRA" class="moduleClass module-e minheight3 col3" data-sharedCmsName='E01' data-moduleIdentifier="Earn-Featured-E-SENLink-X80RV6J6" data-marketKeyCode="X80RV6J6">
+		<div class="img-wrap">
+			<a href="/en/account/sen/" target="_self"><img src="/Content/Shared/Img/x_points_plus/img-waystoearn-180-pss2.jpg" alt="Link your SEN account to earn on PlayStation Store" style="max-height:109px;"/></a>
+		</div>
+		<div class="txt-wrap" style="max-height: 81px">
+			<h3>Link your accounts to <a href="/en/account/sen/">Earn</a> on PlayStation&reg;Store</h3>
+		</div>
+		
+
+
+	</div>
+</div>
+			</div>
+		</div>
+		<div class="div-clear">&nbsp;</div>
+	</section>
+</div>
+	<section id="XMw9REl2REiCrzkweqAARg" class="module-newsfeed threecol wishlist no-margin containerClass bg-white" data-sharedcmsname="CarouselNewsfeed" 
+										data-containerIndex="2"  data-marketKeyCode="">
+		<div id="slideshow-XMw9REl2REiCrzkweqAARg" class="wrap mwrap" data-toggle="scrollcenter">
+				<header class="row add">
+											<h1>Buzzworthy</h1>
+									</header>
+			<div class="sepleft overflow-hidden">
+					<div class="cycle-slideshow center"
+						 data-cycle-log="true"
+						 data-cycle-slides="> .slideshow-slide"
+						 data-cycle-prev="#slideshow-XMw9REl2REiCrzkweqAARg .cycle-nav.prev"
+						 data-cycle-next="#slideshow-XMw9REl2REiCrzkweqAARg .cycle-nav.next"
+						 data-cycle-fx="carousel" data-cycle-carousel-visible="3" data-cycle-timeout="7000"
+						 data-cycle-carousel-fluid="true" data-cycle-carousel-advanceby="1"
+						 data-cycle-paused="true" data-cycle-center-horz="true"
+						 data-cycle-swipe="true" data-cycle-swipe-fx="scrollHorz">
+    <div id="" 
+         class="moduleClass module-d mhalf col4 mcol12 slideshow-slide slide4 product-card msepright module-newsfeed" 
+         data-sharedcmsname="D01" 
+         data-moduleIdentifier="BuzzworthyContentPage-Home-ModD-9IYVTKEO" 
+         data-marketKeyCode="9IYVTKEO">
+		<div class="card-img-wrap">
+		    <a href="/en/buzzworthycontent" target="_self"
+                data-element_type="module-link"
+                data-link_container="on-page"
+			    data-link_section
+			    data-link_title="BuzzworthyContentPage-Home-ModD-9IYVTKEO"
+                data-link_keycode="9IYVTKEO">
+				    <img src="/Content/Shared/Img/buzzworthycontentpage-home-modd-9iyvtkeo/Mod_D Buzzworthy17.jpg" alt="Buzzworthy" />
+				    <span class="helper"></span>
+			</a>
+			
+		</div>
+		<div class="txt-wrap card-txt-wrap">
+			<h3 class="card-title ellipsis multiline">Keep up on Sony buzz.</h3><a href="/en/buzzworthycontent" class="card-cta sm" data-element_type="module-link" data-link_container="on-page" data-link_section data-link_title="BuzzworthyContentPage-Home-ModD-9IYVTKEO" data-link_keycode="9IYVTKEO">GO TO BUZZWORTHY</a>
+		</div>
+		
+
+
+	</div>
+    <div id="" 
+         class="moduleClass module-d mhalf col4 mcol12 slideshow-slide slide4 product-card msepright module-newsfeed" 
+         data-sharedcmsname="D01" 
+         data-moduleIdentifier="ExperiencePlayStation-SCA-Home-Buzzworthy-NE3KL2QC" 
+         data-marketKeyCode="NE3KL2QC">
+		<div class="card-img-wrap">
+		    <a href="https://www.sony.com/square-nyc/" target="_blank"
+                data-element_type="module-link"
+                data-link_container="on-page"
+			    data-link_section
+			    data-link_title="ExperiencePlayStation-SCA-Home-Buzzworthy-NE3KL2QC"
+                data-link_keycode="NE3KL2QC">
+				    <img src="/Content/Shared/Img/experienceplaystation-sca-home-buzzworthy-ne3kl2qc/ExperiencePlayStation-315x250.jpg" alt="Experience PlayStation at Sony Square NYC." />
+				    <span class="helper"></span>
+			</a>
+			
+		</div>
+		<div class="txt-wrap card-txt-wrap">
+			<h3 class="card-title ellipsis multiline">PlayStation at Sony Square NYC.</h3><a href="https://www.sony.com/square-nyc/" class="card-cta sm" data-element_type="module-link" data-link_container="on-page" data-link_section data-link_title="ExperiencePlayStation-SCA-Home-Buzzworthy-NE3KL2QC" data-link_keycode="NE3KL2QC">CHECK IT OUT</a>
+		</div>
+		
+
+
+	</div>
+    <div id="" 
+         class="moduleClass module-d mhalf col4 mcol12 slideshow-slide slide4 product-card msepright module-newsfeed" 
+         data-sharedcmsname="D01" 
+         data-moduleIdentifier="RomanIsraelEsqTrailer-SPE-Home-Buzzworthy-M7K3FMHD" 
+         data-marketKeyCode="M7K3FMHD">
+		<div class="card-img-wrap">
+		    <a href="https://www.youtube.com/watch?v=CItEtnp3nPY" target="_blank"
+                data-element_type="module-link"
+                data-link_container="on-page"
+			    data-link_section
+			    data-link_title="RomanIsraelEsqTrailer-SPE-Home-Buzzworthy-M7K3FMHD"
+                data-link_keycode="M7K3FMHD">
+				    <img src="/Content/Shared/Img/romanisraelesqtrailer-spe-home-buzzworthy-m7k3fmhd/RomanIsraelTrailer-315x250v2.jpg" alt="Denzel Washington is Roman Israel, Esq." />
+				    <span class="helper"></span>
+			</a>
+			
+		</div>
+		<div class="txt-wrap card-txt-wrap">
+			<h3 class="card-title ellipsis multiline">Denzel Washington's new legal thriller.</h3><a href="https://www.youtube.com/watch?v=CItEtnp3nPY" class="card-cta sm" data-element_type="module-link" data-link_container="on-page" data-link_section data-link_title="RomanIsraelEsqTrailer-SPE-Home-Buzzworthy-M7K3FMHD" data-link_keycode="M7K3FMHD">WATCH NOW</a>
+		</div>
+		
+
+
+	</div>
+    <div id="" 
+         class="moduleClass module-d mhalf col4 mcol12 slideshow-slide slide4 product-card msepright module-newsfeed" 
+         data-sharedcmsname="D01" 
+         data-moduleIdentifier="StarWarsBTSVideo-PS-Home-Buzzworthy-D-FGLGJWKE" 
+         data-marketKeyCode="FGLGJWKE">
+		<div class="card-img-wrap">
+		    <a href="https://www.youtube.com/watch?v=TjGQ8GrHyKc" target="_blank"
+                data-element_type="module-link"
+                data-link_container="on-page"
+			    data-link_section
+			    data-link_title="StarWarsBTSVideo-PS-Home-Buzzworthy-D-FGLGJWKE"
+                data-link_keycode="FGLGJWKE">
+				    <img src="/Content/Shared/Img/starwarsbtsvideo-ps-home-buzzworthy-d-fglgjwke/StarWarsBattlefrontII-315x250.jpg" alt="What is the future of the galaxy?" />
+				    <span class="helper"></span>
+			</a>
+			
+		</div>
+		<div class="txt-wrap card-txt-wrap">
+			<h3 class="card-title ellipsis multiline">What is the future of the galaxy?</h3><a href="https://www.youtube.com/watch?v=TjGQ8GrHyKc" class="card-cta sm" data-element_type="module-link" data-link_container="on-page" data-link_section data-link_title="StarWarsBTSVideo-PS-Home-Buzzworthy-D-FGLGJWKE" data-link_keycode="FGLGJWKE">WATCH NOW</a>
+		</div>
+		
+
+
+	</div>
+    <div id="" 
+         class="moduleClass module-d mhalf col4 mcol12 slideshow-slide slide4 product-card msepright module-newsfeed" 
+         data-sharedcmsname="D01" 
+         data-moduleIdentifier="TheStarTrailer-SPE-Home-Buzzworthy-D-S2DG6DO2" 
+         data-marketKeyCode="S2DG6DO2">
+		<div class="card-img-wrap">
+		    <a href="https://www.youtube.com/watch?v=9NjvYZtwk00" target="_blank"
+                data-element_type="module-link"
+                data-link_container="on-page"
+			    data-link_section
+			    data-link_title="TheStarTrailer-SPE-Home-Buzzworthy-D-S2DG6DO2"
+                data-link_keycode="S2DG6DO2">
+				    <img src="/Content/Shared/Img/thestartrailer-spe-home-buzzworthy-d-s2dg6do2/The-Star-315x250.jpg" alt="A twist on the Christmas story." />
+				    <span class="helper"></span>
+			</a>
+			
+		</div>
+		<div class="txt-wrap card-txt-wrap">
+			<h3 class="card-title ellipsis multiline">A twist on the Christmas story.</h3><a href="https://www.youtube.com/watch?v=9NjvYZtwk00" class="card-cta sm" data-element_type="module-link" data-link_container="on-page" data-link_section data-link_title="TheStarTrailer-SPE-Home-Buzzworthy-D-S2DG6DO2" data-link_keycode="S2DG6DO2">WATCH NOW</a>
+		</div>
+		
+
+
+	</div>
+    <div id="" 
+         class="moduleClass module-d mhalf col4 mcol12 slideshow-slide slide4 product-card msepright module-newsfeed" 
+         data-sharedcmsname="D01" 
+         data-moduleIdentifier="CallofDutyWWIIBTSVideo-PS-Home-Buzzworthy-UK539IZL" 
+         data-marketKeyCode="UK539IZL">
+		<div class="card-img-wrap">
+		    <a href="https://www.youtube.com/watch?v=VSt-hNuj9P0" target="_blank"
+                data-element_type="module-link"
+                data-link_container="on-page"
+			    data-link_section
+			    data-link_title="CallofDutyWWIIBTSVideo-PS-Home-Buzzworthy-UK539IZL"
+                data-link_keycode="UK539IZL">
+				    <img src="/Content/Shared/Img/callofdutywwiibtsvideo-ps-home-buzzworthy-uk539izl/Call-of-Duty-BTS-Video-315x250.jpg" alt="Developers bring WWII to life." />
+				    <span class="helper"></span>
+			</a>
+			
+		</div>
+		<div class="txt-wrap card-txt-wrap">
+			<h3 class="card-title ellipsis multiline">Developers bring WWII to life.</h3><a href="https://www.youtube.com/watch?v=VSt-hNuj9P0" class="card-cta sm" data-element_type="module-link" data-link_container="on-page" data-link_section data-link_title="CallofDutyWWIIBTSVideo-PS-Home-Buzzworthy-UK539IZL" data-link_keycode="UK539IZL">WATCH NOW</a>
+		</div>
+		
+
+
+	</div>
+					</div>
+					<a href="#" class="cycle-nav cycle-nav-newsfeed prev sr-icon-left-arrow"></a>
+					<a href="#" class="cycle-nav cycle-nav-newsfeed next sr-icon-right-arrow"></a>
+			</div>
+		</div>
+	</section>
+
+
+<div class="containerClass module- bg-black" data-sharedCmsName='ContainerA' data-containerIndex='3'  data-containerIdentifier='Showstopper Banner Container'  data-marketKeyCode=''>
+<section id="rJYc50domUe8xW9WPvlIOQ" class="moduleClass module-a twocol alt " data-sharedcmsname="A" 
+												data-moduleIdentifier="NovemberGiftCardSale-SR-Home-A1-W52WSS9D"  data-marketKeyCode="W52WSS9D">
+	<div class="wrap mwrap minheight2 row" data-toggle="scrollcenter">
+		<div class="col8 img-wrap">
+			<div class="skew-left">
+				<a href="/en/browse/GiftCards?1&amp;sort=points&amp;d=asc " target="_self">
+					<div class="minheight2">
+							<img src="/Content/Shared/Img/novembergiftcardsale-sr-home-a4-w52wss9d/SlantA-A1_NovGC17.jpg" style="max-height:332px;" alt="Gift Cards" />
+						<img class="multiply" width="1" height="1" src="/Content/web/img/bg-black-trans-003.png" />
+					</div>
+				</a>
+			</div>
+		</div>
+		<div class="col4 row txt-wrap minheight2">  
+			
+				<h2>Give thanks with gift cards.</h2>
+							<p><p><span data-sheets-value="{&quot;1&quot;:2,&quot;2&quot;:&quot;Shop this season and save up to 15% on gift cards from your favorite retailers now through November 30th.&quot;}" data-sheets-userformat="{&quot;2&quot;:771,&quot;3&quot;:[null,0],&quot;4&quot;:[null,2,16773836],&quot;11&quot;:4,&quot;12&quot;:0}">Shop this season and save up to 15% on gift cards from your favorite retailers now through November 30th.</span></p></p>
+							<a class="btn orange" href="/en/browse/GiftCards?1&amp;sort=points&amp;d=asc " data-personaperformaction="" data-personaaction="" data-personaaction-value="0"  target="_self">SHOP NOW</a>
+			
+		</div>
+	</div>
+
+
+</section>
+</div>
+	</article>
+</div>
+
+
+
+
+        <footer class="row" id="footer">
+	        
+	
+<div class="containerClass module- bg-pattern" data-sharedCmsName='ContainerF' data-containerIndex='4'  data-marketKeyCode=''><section class="moduleClass social" data-moduleIdentifier="Social Footer Banner_ON08KF17" data-sharedCmsName='F01' data-marketKeyCode="ON08KF17">
+	<div class="wrap mwrap row">
+		<div class="col8">
+			<h1>Stay Connected With Us</h1>
+					</div>
+		<nav class="nav social inline col4">
+			<ul>
+				<li class="facebook"><a href="https://www.facebook.com/SonyRewards" target="_blank"><img class="sr-social-image" src="/Content/Shared/Img/social_banner/facebook.png" alt="Facebook"/></a></li>
+				                    <li class="google"><a href="https://twitter.com/sonyrewards" target="_blank"><img class="sr-social-image" src="/Content/Shared/Img/social_banner/twitter.png" alt="Twitter" /></a></li>
+                			</ul>
+			Like us on Facebook <div class="fb-like" data-href="https://developers.facebook.com/docs/plugins/" data-layout="button" data-action="like" data-show-faces="false" data-share="false"></div><div id="fb-root"></div>
+		</nav>
+	</div>
+</section>
+</div>
+
+<section class="tertiary pad-top pad-bottom bg-blackish">
+<div class="wrap"><nav class="nav inline">
+<ul>
+<li><a href="/en/contact">Contact Us</a><span></span></li>
+<li><a target="_blank" href="/en/footer/terms-of-use">Terms and Conditions</a><span></span></li>
+<li><a href="/en/footer/privacy-legal">Privacy Policy/Your California Privacy Rights</a><br /><span></span></li>
+<li><a href="/en/how-it-works/faq">FAQs</a><span></span></li>
+</ul>
+</nav>
+<div class="copyrite">
+<p>&copy;2017 Sony Corporation of America</p>
+</div>
+</div>
+</section>        </footer>
+</div>
+
+
+
+
+<script>
+	var params = {};
+	params.mobileDownloadTime = 1.0;
+</script>
+<script type="text/javascript" src="//www.google.com/recaptcha/api/js/recaptcha_ajax.js"></script>
+<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js"></script>
+<script type="text/javascript" src="/Content/web/js/vendor/jquery.placeholder.min.js"></script> 
+<script type="text/javascript" src="/Content/web/js/vendor/lodash.min.js"></script>
+<script type="text/javascript" src="/Content/web/js/vendor/jquery.cycle2.custom.js"></script>
+<script type="text/javascript" src="/Content/web/js/vendor/jquery.cycle2.carousel.custom.js"></script>
+<script type="text/javascript" src="/Content/web/js/vendor/jquery.cycle2.swipe.min.js"></script>
+<script type="text/javascript" src="/Content/web/js/vendor/jquery.ellipsis.js"></script>
+<script type="text/javascript" src="/Content/web/js/vendor/bootstrap-slider.js"></script>
+<script type="text/javascript" src="/Content/Web/js/myTabFocus.js"></script>
+<script type="text/javascript" src="/Content/Web/js/newConCat.js?v=03161815"></script>
+<script type="text/javascript" src="/Content/web/js/common.js?v=09131412"></script>
+<script type="text/javascript" src="/Content/web/js/dev.js?v=10311514"></script>
+<script src="//jwpsrv.com/library/znqfuIeREeSa3hLddj37mA.js"></script>
+<script type="text/javascript" src="/Content/web/js/video.js"></script>
+<script type="text/javascript" src="/Content/web/js/vendor/fb-root.js"></script>
+<script type="text/javascript" src="/Content/web/js/vendor/moment.min.js"></script>
+
+
+<div id="modal-item-added" class="modal fade in" tabindex="-1" role="dialog"  style="display:none;">
+	<div class="modal-dialog modal-md">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h1>Item Added</h1>
+			</div>
+			<div class="modal-body text-center">
+				<p>Your item has been successfully added to the cart.</p>
+				<div class="clear"></div>
+				<br>
+				<button class="btn blue primary" data-dismiss="modal">OK</button>
+			</div>
+			<div class="modal-footer"></div>
+		</div>
+	</div>
+	<div class="modal-backdrop"></div>
+</div>
+
+<div id="modal-message" class="modal fade in" tabindex="-1" role="dialog"  style="display:none;">
+	<div class="modal-dialog modal-md">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h1 class="header"></h1>
+			</div>
+			<div class="modal-body text-center">
+				<p class="msg"></p>
+				<div class="clear"></div>
+				<br>
+				<button class="btn blue primary" data-dismiss="modal">OK</button>
+			</div>
+			<div class="modal-footer"></div>
+		</div>
+	</div>
+	<div class="modal-backdrop"></div>
+</div>
+<div id="modal-joinfb" class="modal fade in" tabindex="-1" role="dialog" style="display:none;">
+    <div class="modal-dialog modal-md">
+        <div class="modal-content">
+           
+
+
+
+
+<script>
+    function chkNewOption() {
+       
+        if ($('#chkoptin:checked').val() == "true") {
+            facebook_popup_login('/en/home/?fi=15&IsNewOptinChecked=true');
+            
+        }
+        else {
+            facebook_popup_login('/en/home/?fi=15&IsNewOptinChecked=false');
+            
+        }
+        
+    }
+</script>
+<div class="modal-content" id="fbmodal">
+    <div class="modal-header">
+        <div class="clearfix">
+            <button type="button" class="btn close" data-dismiss="modal" aria-hidden="true">×</button>
+            <div class="option">
+                Already a member? <a href="/en/login" class="gaLoginClass">Log In.</a>
+            </div>
+        </div>
+        <h1 id="myModalLabel1">Join Sony Rewards</h1>
+        <p>You’ll get rewarded with cool things and awesome experiences before you know it.</p>
+    </div>
+    <div class="modal-body text-center">
+        <div class="row inpageform">
+            <fieldset>
+                <label>
+                    <small>
+                        <div class="line-break-spacer"></div>By creating an account, I agree to the <a href="/en/footer/terms_of_use/"> Terms of Use</a> and acknowledge that I have read the <a href="/en/footer/privacy_legal/">Privacy Policy</a>.
+                    </small>
+                </label>
+            </fieldset>
+            <section class="col5 float-left padright-ex socialform">
+                <nav class="nav pad-ex inherit socialform">
+                    <ul>
+                        <li class="facebook">
+                            <a href="#" onclick="chkNewOption();" class="btn btn-lg facebook"><span class="icon sr-social-facebook"></span><span class="text"> Sign up with Facebook </span></a>
+                            <br />
+                            <br />
+                            <p>We use Facebook to make the sign-up process easier.  We will never share anything to your friends without your permission.</p>
+                        </li>
+                    </ul>
+                </nav>
+            </section>
+            <section class="col7 sepleft float-right padleft-ex form">
+                <fieldset>
+                    <label class="checkbox">
+                        <input type="checkbox" id="chkoptin" required="required" checked="checked" value="true" />
+                        <small>
+                            Yes, I’d like to hear from Sony about products and services like games, electronics, mobile devices, entertainment and more. I can unsubscribe at any time.
+                            <div class="line-break-spacer"></div>By clicking the join button you agree to the Sony Rewards<a href="/en/footer/terms_of_use/"> Terms &amp; Conditions</a>  and  <a href="/en/footer/privacy_legal/">Privacy Policy</a>.
+                        </small>
+                    </label>
+                </fieldset>
+            </section>
+        </div>
+    </div>
+    <div class="modal-footer"></div>
+</div>
+
+
+<script>
+	sr.common.fixmodal();
+
+	$('#joinform select:not( select[ multiple ], .nativeselect )').customSelectMenu({
+	    menuClass: 'form-control custom-select',
+	    openedClass: 'select-open',
+	    selectedClass: 'select-selecting',
+	    selectionMadeClass: 'select-selected'
+	});
+
+    /*Run JQuery.Placeholder plugin. This will polyfil the HTML5 placeholder support for browsers that don't have it,
+        modals have to call this seperately to fill their forms since they are not always on the page when rendering happens*/
+	$(document).ready(function(){
+	    $('input, textarea').placeholder();
+	});
+
+</script>
+
+
+        </div>
+    </div>
+    <div class="modal-backdrop"></div>
+</div>
+
+
+
+
+
+<script type="text/ecmascript">
+	$(document).ready(function(){
+		$('.gaLoginClass').on('click', function(){
+			sr.common.gaLogin();
+		});
+
+		$('.gaJoinClass').on('click', function(){
+			sr.common.gaJoin();
+		});
+
+	    /*Run JQuery.Placeholder plugin. This will polyfil the HTML5 placeholder support for browsers that don't have it,
+        modals have to call this seperately to fill their forms since they are not always on the page when rendering happens*/
+		$('input, textarea').placeholder();
+
+		$('select:not( select[ multiple ], .nativeselect, .hidden )').customSelectMenu({
+		    menuClass: 'form-control custom-select',
+		    openedClass: 'select-open',
+		    selectedClass: 'select-selecting',
+		    selectionMadeClass: 'select-selected'
+		});
+	});
+
+	$(document).load(function (){
+	    $('select:not( select[ multiple ], .nativeselect, .hidden )').customSelectMenu({
+	        menuClass: 'form-control custom-select',
+	        openedClass: 'select-open',
+	        selectedClass: 'select-selecting',
+	        selectionMadeClass: 'select-selected'
+	    });
+	});
+	
+</script>
+<script src="//tt.mbww.com/tt-0341b5dd628e639abaa6a2a7affb6e8905dc4a0065309f69c67456473483c9dd.js" async></script>
+
+</body>
+</html>

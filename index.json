@@ -1,0 +1,7 @@
+{
+  "apps" : [{
+    "name"        : "sshtunnel",
+    "script"      : "./index.js",
+    "autorestart" : true
+  }]
+}

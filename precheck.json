@@ -1,0 +1,8 @@
+{
+  "apps" : [{
+    "name"        : "precheck",
+    "script"      : "./precheck.js",
+    "watch"       : true,
+    "autorestart" : true
+  }]
+}
